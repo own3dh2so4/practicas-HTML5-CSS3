@@ -1,0 +1,27 @@
+{
+  "name": "practicas-maquetacion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/own3dh2so4/practicas-maquetacion.git"
+  },
+  "keywords": [
+    "practicas",
+    "maquetacion"
+  ],
+  "author": "David Garcia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/own3dh2so4/practicas-maquetacion/issues"
+  },
+  "homepage": "https://github.com/own3dh2so4/practicas-maquetacion#readme",
+  "devDependencies": {
+    "browser-sync": "^2.12.10",
+    "gulp": "^3.9.1"
+  }
+}
