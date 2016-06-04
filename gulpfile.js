@@ -10,6 +10,7 @@ gulp.task('serve', function() {
 
     gulp.watch("app/**/*.html").on('change', browserSync.reload);
     gulp.watch("app/**/*.css").on('change', browserSync.reload);
+    gulp.watch("app/**/**/*.css").on('change', browserSync.reload);
 });
 
 gulp.task('default', ['serve']);

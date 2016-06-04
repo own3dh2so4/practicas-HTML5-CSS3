@@ -1,0 +1,172 @@
+@charset "utf-8";
+
+/* Estilos generales*/
+
+header,nav,section,article,aside,footer {
+	display:block;
+  overflow: hidden;
+}
+
+body {
+  background-color: #F0F0F0;
+  margin: 45px auto auto auto;
+  width: 1000px;
+}
+
+h1 {
+  color: #000;
+  font-size: 60px;
+}
+h2 {
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+footer p {
+  font-size: 13px;
+  margin: 0;
+}
+
+.noticia {
+  float: left;
+  width: 30.5%;
+  padding: 2.5%;
+  padding-bottom: 0;
+  padding-right: 0;
+}
+
+.texto-blanco {
+  color: #FFF;
+}
+
+.texto-sombra {
+  text-shadow: 2px 2px 2px #000000;
+}
+
+.pequeno {
+  margin: 0px;
+  font-size: 20px;
+}
+
+.grande {
+  margin: 0px;
+  font-size: 40px;
+}
+
+.acceso-noticia {
+  background-color: rgba(255,255,255,0.7);
+  color: #018EA0;
+  display: block;
+  float: right;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 0;
+}
+/*Estilos maquetacion cabecera*/
+#titulo {
+  float: left;
+}
+
+#menu {
+  padding-left: 200px;
+}
+
+#menu ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+#menu ul li {
+  /*overflow: hidden;*/
+}
+
+#menu li a {
+  background-color: #E9E9E9;
+  border: 2px solid #E2E2E2;
+  color: #000;
+  display: block;
+  float: left;
+  font-weight: bolder;
+  margin-left: 10px;
+  padding:30px 25px 40px 25px;
+}
+
+#menu li a:hover {
+  background-color: #22546D;
+  color: #FFF;
+  border: 2px solid #000;
+}
+
+
+#titulo h1, #titulo h2 {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*Estilos del cuerpo */
+
+#principal {
+  background-image: url('../imagenes/banners.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+#noticia {
+  background-color: rgba(30,148,162,0.8);
+  float: left;
+  margin-left: 14px;
+  margin-top: 180px;
+  padding: 20px;
+  width: 300px;
+}
+
+#conecta {
+  background-color: #22546D;
+  display: block;
+  float: left;
+  padding: 10px 30px 10px 30px;
+}
+
+#conecta:hover {
+  background-color: #FFF;
+  border: 5px solid #000;
+  color: #000;
+  display: block;
+  float: left;
+  padding: 5px 25px 5px 25px;
+}
+
+#noticia-izq {
+  background-color: #2D5B75;
+}
+
+#noticia-cen {
+  background-color: rgb(1,142,160);
+}
+
+#noticia-der {
+  background-color: rgb(49,212,219);
+}
+
+#pie-der {
+  float: left;
+  width: 60%;
+}
+
+#pie-izq {
+  float: left;
+  padding: 0 2.5% 0 0;
+  width: 37.5%;
+
+}
+
+#pie-izq a{
+  display: block;
+  float: right;
+  padding: 10px;
+}
