@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+@import "flaticon.css";
+
+/* Estilos generales*/
+
+header,nav,section,article,aside,footer {
+	display:block;
+  overflow: hidden;
+}
+
+body {
+	background:linear-gradient(top,#FFF,#353535 355px, #000 355px, #353535) repeat-x fixed;
+	background:-moz-linear-gradient(top,#FFF,#353535 355px, #000 355px, #353535) repeat-x fixed;
+	background:-webkit-linear-gradient(top,#FFF,#353535 355px, #000 355px, #353535) repeat-x fixed;
+	background:-o-linear-gradient(top,#FFF,#353535 355px, #000 355px, #353535) repeat-x fixed;
+	background:-ms-linear-gradient(top,#FFF,#353535 355px, #000 355px, #353535) repeat-x fixed;
+	width: 1000px;
+	margin: 20px auto;
+}
+
+header {
+	text-align: center;
+}
+
+#titulo {
+	color: #FFF;
+	text-shadow: 2px 2px #000;
+	font-size: 50px;
+	margin-top: 50px;
+}
+
+#menu {
+	margin-top: 100px;
+}
+
+#menu ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+#menu a {
+	display: block;
+	float: left;
+	color: #FFF;
+	text-decoration: none;
+	background: linear-gradient(top,#0DC2FF,#007095);
+  background: -moz-linear-gradient(top,#0DC2FF,#007095);
+  background: -o-linear-gradient(top,#0DC2FF,#007095);
+  background: -ms-linear-gradient(top,#0DC2FF,#007095);
+  background: -webkit-linear-gradient(top,#0DC2FF,#007095);
+	margin: 10px;
+	padding: 100px 50px 40px 50px;
+	border-radius: 20px;
+	font-size: 15px;
+	font-weight: bold;
+	position: relative;
+	transition: margin 0.5s, padding 0.5s;
+}
+
+#menu a:hover {
+	text-decoration: none;
+	margin: 10px;
+	padding: 105px 55px 45px 55px;
+	border-radius: 20px;
+	margin: 5px;
+}
+
+.menu-icono {
+	padding: 0;
+	margin: 0;
+	display: block;
+	position: absolute;
+	top: -100%;
+	left: 37px;
+	opacity: 0;
+	transition:top 0.5s, opacity 0.5s;
+	-moz-transition:top 0.5s, opacity 0.5s;
+	-ms-transition:top 0.5s, opacity 0.5s;
+	-o-transition:top 0.5s, opacity 0.5s;
+	-webkit-transition:top 0.5s, opacity 0.5s;
+}
+
+#menu a:hover .menu-icono {
+	top: 10%;
+	opacity: 1;
+}
+
+.menu-icono::before {
+	font-size: 70px;
+}
+
+.texto-blanco {
+	color: #FFF;
+}
+
+.texto-azul {
+	color: #0DC2FF;
+}
+
+.texto-centrado {
+	text-align: center;
+}
