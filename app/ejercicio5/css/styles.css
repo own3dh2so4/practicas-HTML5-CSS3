@@ -1,0 +1,296 @@
+@charset "utf-8";
+
+
+/* Estilos generales*/
+
+header,nav,section,article,aside,footer {
+	display:block;
+  overflow: hidden;
+}
+
+body {
+	background: #000 url('../imagenes/fondo-web.jpg') no-repeat fixed;
+}
+
+.texto-ubuntu {
+	font-family: Ubuntu;
+}
+
+/* Maquetacion del cuerpo */
+#container {
+	width: 1000px;
+	margin: 20px auto;
+
+}
+
+#cabecera {
+	position: relative;
+	height: 420px;
+	background: rgba(255, 255, 255, 0.8);
+}
+
+/*maquetacion de la cabecera */
+.marido{
+	background: url('../imagenes/james.png') no-repeat;
+	padding: 167.5px 137px;
+	display: inline-block;
+	position: absolute;
+	left: 185px;
+	top: 0px;
+	animation:animarMarido 5s infinite;
+	-moz-animation:animarMarido 5s infinite;
+	-webkit-animation:animarMarido 5s infinite;
+	-o-animation:animarMarido 5s infinite;
+}
+
+.mujer{
+	background: url('../imagenes/elizabeth.png') no-repeat;
+	padding: 167.5px 137px;
+	display: inline-block;
+	position: absolute;
+	right: 195px;
+	top: 0px;
+	animation:animarMujer 5s infinite;
+	-moz-animation:animarMujer 5s infinite;
+	-webkit-animation:animarMujer 5s infinite;
+	-o-animation:animarMujer 5s infinite;
+}
+
+.love {
+	background: url('../imagenes/love.png') no-repeat;
+	padding: 144px 66px;
+	display: inline-block;
+	position: absolute;
+	right: 439px;
+	top: 165px;
+	animation:animarLove 5s infinite;
+	-moz-animation:animarLove 5s infinite;
+	-webkit-animation:animarLove 5s infinite;
+	-o-animation:animarLove 5s infinite;
+}
+
+/*Maquetacion menu principal*/
+#menu-principal {
+	text-align: center;
+	background: rgba(255, 255, 255, 0.8);
+}
+
+.menu ul{
+	padding:0px;
+	margin: 0px;
+	list-style: none;
+}
+
+#menu-principal a {
+	text-decoration: none;
+	color: #FFF9E4;
+	background: url('../imagenes/fondo-boton.png') no-repeat center;
+	margin: 20px;
+	display: inline-block;
+	padding: 10px 300px;
+	font-size: 20px;
+	transition: transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  -ms-transition: -ms-transform 0.3s;
+  -o-transition: -o-transform 0.3s;
+  -webkit-transition: -webkit-transform 0.3s;
+
+}
+
+#menu-principal a:hover {
+	color: #FF9900;
+	transform: scale(1.3,1.3);
+	-moz-transform: scale(1.3,1.3);
+	-o-transform: scale(1.3,1.3);
+	-ms-transform: scale(1.3,1.3);
+	-webkit-transform: scale(1.3,1.3);
+}
+
+.rotate-right {
+	transform: rotate(3deg);
+	-moz-transform: rotate(3deg);
+	-ms-transform: rotate(3deg);
+	-o-transform: rotate(3deg);
+	-webkit-transform: rotate(3deg);
+}
+.rotate-left {
+	transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
+	-ms-transform: rotate(-3deg);
+	-o-transform: rotate(-3deg);
+	-webkit-transform: rotate(-3deg);
+}
+
+/*Maquetacion pie*/
+#texto-pie {
+	color:#FFF;
+	width: 70%;
+	float: left;
+}
+
+#redes-sociales {
+	width: 18%;
+	float: left;
+	padding-left: 12%;
+	padding-top: 10px;
+}
+
+#redes-sociales a {
+	display: block;
+	float: left;
+	padding: 20px;
+	margin-left: 2%;
+	transition: background-position 0.3s;
+	-moz-transition: background-position 0.3s;
+	-o-transition: background-position 0.3s;
+	-ms-transition: background-position 0.3s;
+	-webkit-transition: background-position 0.3s;
+}
+
+.facebook {
+	background: url('../imagenes/facebook.png') no-repeat;
+}
+
+.blog {
+	background: url('../imagenes/blog.png') no-repeat;
+}
+
+.twitter {
+	background: url('../imagenes/twitter.png') no-repeat;
+}
+
+.youtube {
+	background: url('../imagenes/youtube.png') no-repeat;
+}
+
+.facebook:hover, .blog:hover, .twitter:hover,.youtube:hover {
+	background-position: -40px;
+}
+
+
+/*Animanciones*/
+@keyframes animarMarido {
+	0%{top:0;left:-274px;}
+	45%{top:0;left:185px;}
+	55%{top:0;left:185px;}
+	100%{top:0;left:-274px;}
+}
+
+@-moz-keyframes animarMarido {
+	0%{top:0;left:-274px;}
+	45%{top:0;left:185px;}
+	55%{top:0;left:185px;}
+	100%{top:0;left:-274px;}
+}
+
+@-webkit-keyframes animarMarido {
+	0%{top:0;left:-274px;}
+	45%{top:0;left:185px;}
+	55%{top:0;left:185px;}
+	100%{top:0;left:-274px;}
+}
+
+@keyframes animarMujer{
+	0%{top:0;right:-275px;}
+	45%{top:0;right:195px;}
+	55%{top:0;right:195px;}
+	100%{top:0;right:-275px;}
+}
+
+@-moz-keyframes animarMujer{
+	0%{top:0;right:-275px;}
+	45%{top:0;right:195px;}
+	55%{top:0;right:195px;}
+	100%{top:0;right:-275px;}
+}
+
+@-webkit-keyframes animarMujer{
+	0%{top:0;right:-275px;}
+	45%{top:0;right:195px;}
+	55%{top:0;right:195px;}
+	100%{top:0;right:-275px;}
+}
+
+@keyframes animarLove{
+	0%{
+		transform:scale(1,1);
+		-moz-transform:scale(1,1);
+		-webkit-transform:scale(1,1);
+		}
+	45%{
+		transform:scale(1,1);
+		-moz-transform:scale(1,1);
+		-webkit-transform:scale(1,1);
+		}
+	50%{
+		transform:scale(1.4,1.4);
+		-moz-transform:scale(1.4,1.4);
+		-webkit-transform:scale(1.4,1.4);
+		}
+	55%{
+		transform:scale(1,1);
+		-moz-transform:scale(1,1);
+		-webkit-transform:scale(1,1);
+		}
+	100%{
+		transform:scale(1,1);
+		-moz-transform:scale(1,1);
+		-webkit-transform:scale(1,1);
+		}
+}
+
+@-moz-keyframes animarLove{
+	0%{
+		transform:scale(1,1);
+		-moz-transform:scale(1,1);
+		-webkit-transform:scale(1,1);
+		}
+	45%{
+		transform:scale(1,1);
+		-moz-transform:scale(1,1);
+		-webkit-transform:scale(1,1);
+		}
+	50%{
+		transform:scale(1.4,1.4);
+		-moz-transform:scale(1.4,1.4);
+		-webkit-transform:scale(1.4,1.4);
+		}
+	55%{
+		transform:scale(1,1);
+		-moz-transform:scale(1,1);
+		-webkit-transform:scale(1,1);
+		}
+	100%{
+		transform:scale(1,1);
+		-moz-transform:scale(1,1);
+		-webkit-transform:scale(1,1);
+		}
+}
+
+@-webkit-keyframes animarLove{
+	0%{
+		transform:scale(1,1);
+		-moz-transform:scale(1,1);
+		-webkit-transform:scale(1,1);
+		}
+	45%{
+		transform:scale(1,1);
+		-moz-transform:scale(1,1);
+		-webkit-transform:scale(1,1);
+		}
+	50%{
+		transform:scale(1.4,1.4);
+		-moz-transform:scale(1.4,1.4);
+		-webkit-transform:scale(1.4,1.4);
+		}
+	55%{
+		transform:scale(1,1);
+		-moz-transform:scale(1,1);
+		-webkit-transform:scale(1,1);
+		}
+	100%{
+		transform:scale(1,1);
+		-moz-transform:scale(1,1);
+		-webkit-transform:scale(1,1);
+		}
+}
